@@ -1,24 +1,21 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
+import theme from '../styles/theme'
+import GlobalStyles from '../styles/globalStyles'
 // Layout
 import Layout from '../layout/index'
 
 // Components
-import Image from '../components/Image'
 import Heading from '../components/Heading'
+import Menu from '../components/Menu'
 
 interface IndexPageProps {
   location: {
     pathname: string
   }
   data: {
-    image: {
-      childImageSharp: {
-        fluid: any
-      }
-    }
     site: {
       siteMetadata: {
         title: string
@@ -29,36 +26,35 @@ interface IndexPageProps {
 }
 
 const Wrapper = styled.div`
+  margin: 8em;
   width: 100%;
-  min-height: 100vh;
+  padding: 0;
+  overflow: hidden;
+  min-height: 33.3vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: ${p => p.theme.spacing.unit * 3}px;
-  background: #003580;
+  align-items: flex-start;
 `
 
 export default ({ data, location }: IndexPageProps) => {
-  const { image, site } = data
+  const { site } = data
   return (
     <Layout location={location}>
+      <GlobalStyles />
       <Wrapper>
-        <Image img={image.childImageSharp} />
         <Heading
           title={site.siteMetadata.title}
           subtitle={site.siteMetadata.description}
         />
+        <Menu />
       </Wrapper>
+      <ThemeProvider theme={theme}></ThemeProvider>
     </Layout>
   )
 }
 
 export const indexPageQuery = graphql`
   query IndexPageQuery {
-    image: file(relativePath: { eq: "icon.png" }) {
-      ...fluidImage
-    }
     site {
       siteMetadata {
         title

@@ -14,8 +14,8 @@ export interface ITheme {
 
 const mainTheme = {
   palette: {
-    darkPrimary: '#FF8515',
-    primary: '#FA9F4B',
+    darkPrimary: 'black',
+    primary: 'black',
     white: '#FFFFFF',
   },
   spacing: {
