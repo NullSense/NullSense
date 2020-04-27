@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: `https://NullSense.dev/`,
     language: `en`,
     color: `#1a1b1e`,
-    twitter: 'NullSense',
+    twitter: "NullSense",
   },
   plugins: [
     {
@@ -32,4 +32,4 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
   ],
-}
+};

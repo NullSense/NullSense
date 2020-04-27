@@ -1,7 +1,16 @@
-* {
+@font-face {
+  font-family: Blender Pro;
+  src: url("../../static/fonts/BlenderPro.woff2") format("woff2"),
+    url("../../static/fonts/BlenderPro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+html,
+body {
   -webkit-font-smoothing: antialiased;
-  @import url(https://db.onlinewebfonts.com/c/a082fd3df68a0b54e0d4d794bc38d268?family=Blender+Pro);
-  font-family: 'Blender Pro';
+  font-family: "Blender Pro";
   background-color: #1a1b1e;
   color: white;
 }
@@ -12,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Blender Pro';
+  font-family: "Blender Pro";
 }
 
 p {
