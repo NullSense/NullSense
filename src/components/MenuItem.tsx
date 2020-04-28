@@ -11,7 +11,7 @@ const ListItem = styled.li`
   margin: 0 0 1em 0;
 `;
 
-const StyledLink = styled((props) => <Link {...props} />)`
+const StyledLink = styled(Link)`
   color: white;
   font-size: 6vw;
   margin: 0 0 33em 0;
@@ -24,11 +24,14 @@ const StyledLink = styled((props) => <Link {...props} />)`
   }
 `;
 
-export default (props: MenuItemProps) => {
-  const { title, link } = props;
-  return (
-    <ListItem>
-      <StyledLink to={link}>{title}</StyledLink>
-    </ListItem>
-  );
-};
+class MenuItem extends React.Component<MenuItemProps> {
+  render() {
+    return (
+      <ListItem>
+        <StyledLink to={this.props.link}>{this.props.title}</StyledLink>
+      </ListItem>
+    );
+  }
+}
+
+export default MenuItem;

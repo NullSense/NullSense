@@ -17,37 +17,15 @@ const Title = styled.h1`
   font-weight: 400;
   margin: 0;
 
-  @media (min-width: 320px) {
-    font-size: 12vw;
-  }
-  @media (min-width: 992px) {
-    font-size: 12vw;
-  }
-  @media (min-width: 1200px) {
-    font-size: 12vw;
-  }
-
   &:before {
     content: "NullSense";
+    animation: scramble 1.2s normal;
   }
-  &:hover {
-    animation: show 0.8s infinite;
-  }
-  @keyframes show {
-    93% {
-      color: white;
-    }
-    94% {
-      color: white;
-    }
-    100% {
-      color: white;
-    }
-  }
+
   &:hover:before {
-    animation: texte 0.8s infinite;
+    animation: scramble 0.8s infinite;
   }
-  @keyframes texte {
+  @keyframes scramble {
     0% {
       content: "4@,3SAscA";
     }
@@ -89,21 +67,20 @@ const Subtitle = styled.p`
   @media (min-width: 576px) {
     font-size: 2.5vw;
   }
-  @media (min-width: 768px) {
-  }
-  @media (min-width: 992px) {
-  }
   @media (min-width: 1200px) {
     font-size: 3vw;
   }
 `;
 
-export default (props: IHeadingProps) => {
-  const { title, subtitle } = props;
-  return (
-    <Wrapper>
-      <Title></Title>
-      <Subtitle>{subtitle}</Subtitle>
-    </Wrapper>
-  );
-};
+class Heading extends React.Component<IHeadingProps> {
+  render() {
+    return (
+      <Wrapper>
+        <Title></Title>
+        <Subtitle>{this.props.subtitle}</Subtitle>
+      </Wrapper>
+    );
+  }
+}
+
+export default Heading;
