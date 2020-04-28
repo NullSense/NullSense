@@ -26,13 +26,29 @@ interface IndexPageProps {
 }
 
 const Wrapper = styled.div`
-  margin: 8em;
+  margin: 2em;
   width: 100%;
   padding: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (min-width: 320px) {
+    margin: 2em;
+  }
+  @media (min-width: 576px) {
+    margin: 4em;
+  }
+  @media (min-width: 768px) {
+    margin: 5em;
+  }
+  @media (min-width: 992px) {
+    margin: 7em;
+  }
+  @media (min-width: 1200px) {
+    margin: 8em;
+  }
 `;
 
 export default ({ data, location }: IndexPageProps) => {

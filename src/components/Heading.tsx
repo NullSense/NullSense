@@ -13,9 +13,19 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 10vw;
+  font-size: 12vw;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: 320px) {
+    font-size: 12vw;
+  }
+  @media (min-width: 992px) {
+    font-size: 12vw;
+  }
+  @media (min-width: 1200px) {
+    font-size: 12vw;
+  }
 
   &:before {
     content: "NullSense";
@@ -75,6 +85,17 @@ const Subtitle = styled.p`
   font-size: 3vw;
   font-weight: 100;
   margin-top: 0.5em;
+
+  @media (min-width: 576px) {
+    font-size: 2.5vw;
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 992px) {
+  }
+  @media (min-width: 1200px) {
+    font-size: 3vw;
+  }
 `;
 
 export default (props: IHeadingProps) => {

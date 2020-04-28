@@ -13,7 +13,7 @@ const ListItem = styled.li`
 
 const StyledLink = styled((props) => <Link {...props} />)`
   color: white;
-  font-size: 4vw;
+  font-size: 6vw;
   margin: 0 0 33em 0;
   height: 33em;
   text-decoration: none;
