@@ -1,28 +1,28 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
-import styled, { ThemeProvider } from 'styled-components'
+import * as React from "react";
+import { graphql } from "gatsby";
+import styled, { ThemeProvider } from "styled-components";
 
-import theme from '../styles/theme'
-import GlobalStyles from '../styles/globalStyles'
+import theme from "../styles/theme";
+import GlobalStyles from "../styles/globalStyles";
 // Layout
-import Layout from '../layout/index'
+import Layout from "../layout/index";
 
 // Components
-import Heading from '../components/Heading'
-import Menu from '../components/Menu'
+import Heading from "../components/Heading";
+import Menu from "../components/Menu";
 
 interface IndexPageProps {
   location: {
-    pathname: string
-  }
+    pathname: string;
+  };
   data: {
     site: {
       siteMetadata: {
-        title: string
-        description: string
-      }
-    }
-  }
+        title: string;
+        description: string;
+      };
+    };
+  };
 }
 
 const Wrapper = styled.div`
@@ -30,14 +30,13 @@ const Wrapper = styled.div`
   width: 100%;
   padding: 0;
   overflow: hidden;
-  min-height: 33.3vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-`
+`;
 
 export default ({ data, location }: IndexPageProps) => {
-  const { site } = data
+  const { site } = data;
   return (
     <Layout location={location}>
       <GlobalStyles />
@@ -50,8 +49,8 @@ export default ({ data, location }: IndexPageProps) => {
       </Wrapper>
       <ThemeProvider theme={theme}></ThemeProvider>
     </Layout>
-  )
-}
+  );
+};
 
 export const indexPageQuery = graphql`
   query IndexPageQuery {
@@ -62,4 +61,4 @@ export const indexPageQuery = graphql`
       }
     }
   }
-`
+`;
