@@ -28,8 +28,9 @@ const Menu = styled.ul`
 export default () => {
   return (
     <Menu>
-      <MenuItem title="Home" link="/"></MenuItem>
+      <MenuItem title="Home" to="/"></MenuItem>
       <MenuItem title="Blog" link="https://CuriosityOverflow.xyz"></MenuItem>
+      <MenuItem title="Contact" to="/Contact"></MenuItem>
     </Menu>
   );
 };

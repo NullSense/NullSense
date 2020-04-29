@@ -5,7 +5,7 @@ module.exports = {
     site: `NullSense`,
     title: `NullSense`,
     titleTemplate: `%s - Developer`,
-    description: `Tech enthusiast`,
+    description: `Developer`,
     siteUrl: `https://NullSense.dev/`,
     language: `en`,
     color: `#1a1b1e`,

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Blender Pro;
+  font-family: "Blender Pro";
   src: url("../../static/fonts/BlenderPro.woff2") format("woff2"),
     url("../../static/fonts/BlenderPro.woff") format("woff");
   font-weight: 400;
