@@ -5,3 +5,13 @@
     
 [![NullSense's github stats](https://github-readme-stats.vercel.app/api?username=NullSense)](https://github.com/NullSense/github-readme-stats)
 </p>
+
+<div align="center">
+  <h3>Is this mind yours?...</h3>
+  <p align="center">
+  </p>
+  <br />
+  <br />
+  <br />
+  <img src="https://github-readme-stats.vercel.app/api?username=NullSense&show_icons=true" />
+</div>
