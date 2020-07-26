@@ -1,5 +1,5 @@
 <div align="center">
-  <h3>Cool</h3>
+  <h1>NullSense</h1>
   <p align="center">
     <img src="https://github.com/NullSense/NullSense/blob/master/is_this_mind_yours.gif"></img>
     <br />
@@ -10,3 +10,4 @@
   <br />
   <img src="https://github-readme-stats.vercel.app/api?username=NullSense&show_icons=true" />
 </div>
+Oh I see
