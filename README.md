@@ -1,12 +1,16 @@
 <div align="center">
   <h1>NullSense</h1>
-  <h2><a target="_blank" href="https://CuriosityOverflow.xyz">Curiosity Overflow</a></h2>
   <p align="center">
-    <img src="https://github.com/NullSense/NullSense/blob/master/is_this_mind_yours_colored.gif"></img>
     <br />
-    <img src="https://enn9jdor0au0zty.m.pipedream.net"></img>
   </p>
-  <br />
-  <br />
-  <img src="https://github-readme-stats.vercel.app/api?username=NullSense&show_icons=true" />
+
 </div>
+
+# NullSense
+
+<img src="https://github-readme-stats.vercel.app/api?username=NullSense&show_icons=true" />
+<img src="https://enn9jdor0au0zty.m.pipedream.net"></img>
+
+### Latest Posts on <a target="_blank" href="https://CuriosityOverflow.xyz">Curiosity Overflow</a>:
+<!-- feed start -->
+<!-- feed end -->
