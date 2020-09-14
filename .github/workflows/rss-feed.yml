@@ -1,0 +1,27 @@
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  push:
+    branches:
+      - master
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: sarisia/actions-readme-feed@v1.3.0
+        id: feed
+        with:
+          url: 'https://curiosityoverflow.xyz/posts/index.xml'
+          file: 'README.md'
+      - if: ${{ steps.feed.outputs.changed == true }}
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add .
+          git commit -m "readme: update blog feed"
+          git push
+          
+          
+      
