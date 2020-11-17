@@ -2,7 +2,7 @@
   <h1>NullSense</h1>
 </div>
 
-<img src="https://github-readme-stats.vercel.app/api?username=NullSense&count_private=true&show_icons=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=ffffff)" />
+<img src="https://github-readme-stats.vercel.app/api?username=NullSense&count_private=true&show_icons=true)" />
 <img src="https://enn9jdor0au0zty.m.pipedream.net"></img>
 
 ### Latest Posts on <a target="_blank" href="https://CuriosityOverflow.xyz">Curiosity Overflow</a>:
