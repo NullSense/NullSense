@@ -508,3 +508,5 @@ patch:
         patched: '2021-01-20T09:20:18.294Z'
     - gatsby > babel-plugin-lodash > @babel/helper-module-imports > @babel/types > lodash:
         patched: '2021-01-20T09:20:18.294Z'
+    - gatsby > @typescript-eslint/eslint-plugin > lodash:
+        patched: '2021-03-25T09:45:26.760Z'
