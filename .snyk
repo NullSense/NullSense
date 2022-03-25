@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.19.0
+version: v1.22.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -508,3 +508,9 @@ patch:
         patched: '2021-01-20T09:20:18.294Z'
     - gatsby > babel-plugin-lodash > @babel/helper-module-imports > @babel/types > lodash:
         patched: '2021-01-20T09:20:18.294Z'
+    - snyk > inquirer > lodash:
+        patched: '2022-03-25T18:19:53.329Z'
+    - gatsby > gatsby-cli > yurnalist > inquirer > lodash:
+        patched: '2022-03-25T18:19:53.329Z'
+    - gatsby-plugin-typescript > @babel/preset-typescript > @babel/plugin-transform-typescript > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-03-25T18:19:53.329Z'
